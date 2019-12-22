@@ -17,7 +17,8 @@ class String
   end
 
   def count_sentences
-    x = self.delete()
+    x = self.delete ".", "!", "?"
+    x.join.length
 
 
   end
